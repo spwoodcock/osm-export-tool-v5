@@ -50,7 +50,10 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm build
+        run: |
+          echo "Building with base:"
+          echo "${GITHUB_REPOSITORY}"
+          pnpm build
         env:
           # Provides the path prefix for svelte.config.js
           GITHUB_REPOSITORY: ${{ github.repository }}
