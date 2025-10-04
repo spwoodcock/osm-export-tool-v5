@@ -1,0 +1,38 @@
+{
+  "name": "osm-export-tool",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "@tsconfig/svelte": "^5.0.5",
+    "@types/node": "^24.6.0",
+    "@unocss/preset-wind3": "^66.5.2",
+    "svelte": "^5.39.6",
+    "svelte-check": "^4.3.2",
+    "typescript": "~5.9.3",
+    "unocss": "^66.5.2",
+    "vite": "npm:rolldown-vite@7.1.14"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.1.14"
+    }
+  },
+  "dependencies": {
+    "@awesome.me/webawesome": "3.0.0-beta.1",
+    "@hotosm/ui": "0.3.4-b2",
+    "@svelte-maplibre-gl/terradraw": "^1.0.1",
+    "@turf/bbox": "^7.2.0",
+    "@turf/buffer": "^7.2.0",
+    "@turf/rewind": "^7.2.0",
+    "svelte-maplibre-gl": "^1.0.1",
+    "terra-draw": "^1.15.0"
+  }
+}
