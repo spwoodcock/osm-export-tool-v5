@@ -51,6 +51,9 @@ jobs:
 
       - name: Build
         run: pnpm build
+        env:
+          # Provides the path prefix for svelte.config.js
+          GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
